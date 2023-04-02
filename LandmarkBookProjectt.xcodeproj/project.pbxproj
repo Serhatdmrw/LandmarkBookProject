@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		DA92390A29D9E0E200573CE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92390929D9E0E200573CE8 /* AppDelegate.swift */; };
 		DA92390C29D9E0E200573CE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92390B29D9E0E200573CE8 /* SceneDelegate.swift */; };
-		DA92390E29D9E0E200573CE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92390D29D9E0E200573CE8 /* ViewController.swift */; };
-		DA92391129D9E0E200573CE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA92390F29D9E0E200573CE8 /* Main.storyboard */; };
+		DA92390E29D9E0E200573CE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92390D29D9E0E200573CE8 /* HomeViewController.swift */; };
+		DA92391129D9E0E200573CE8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA92390F29D9E0E200573CE8 /* Home.storyboard */; };
 		DA92391329D9E0E600573CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA92391229D9E0E600573CE8 /* Assets.xcassets */; };
 		DA92391629D9E0E600573CE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA92391429D9E0E600573CE8 /* LaunchScreen.storyboard */; };
+		DA92391F29D9E1EF00573CE8 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92391D29D9E1EF00573CE8 /* DetailsViewController.swift */; };
+		DA92392029D9E1EF00573CE8 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA92391E29D9E1EF00573CE8 /* DetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA92390629D9E0E200573CE8 /* LandmarkBookProjectt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandmarkBookProjectt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA92390929D9E0E200573CE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA92390B29D9E0E200573CE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA92390D29D9E0E200573CE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DA92391029D9E0E200573CE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA92390D29D9E0E200573CE8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DA92391029D9E0E200573CE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		DA92391229D9E0E600573CE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA92391529D9E0E600573CE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA92391729D9E0E600573CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA92391D29D9E1EF00573CE8 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		DA92391E29D9E1EF00573CE8 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		DA92390829D9E0E200573CE8 /* LandmarkBookProjectt */ = {
 			isa = PBXGroup;
 			children = (
-				DA92390929D9E0E200573CE8 /* AppDelegate.swift */,
-				DA92390B29D9E0E200573CE8 /* SceneDelegate.swift */,
-				DA92390D29D9E0E200573CE8 /* ViewController.swift */,
-				DA92390F29D9E0E200573CE8 /* Main.storyboard */,
+				DA92391729D9E0E600573CE8 /* Info.plist */,
 				DA92391229D9E0E600573CE8 /* Assets.xcassets */,
 				DA92391429D9E0E600573CE8 /* LaunchScreen.storyboard */,
-				DA92391729D9E0E600573CE8 /* Info.plist */,
+				DA92392129D9E32F00573CE8 /* Delegates */,
+				DA92392229D9E34300573CE8 /* Screens */,
 			);
 			path = LandmarkBookProjectt;
+			sourceTree = "<group>";
+		};
+		DA92392129D9E32F00573CE8 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DA92390929D9E0E200573CE8 /* AppDelegate.swift */,
+				DA92390B29D9E0E200573CE8 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		DA92392229D9E34300573CE8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DA92390D29D9E0E200573CE8 /* HomeViewController.swift */,
+				DA92390F29D9E0E200573CE8 /* Home.storyboard */,
+				DA92391D29D9E1EF00573CE8 /* DetailsViewController.swift */,
+				DA92391E29D9E1EF00573CE8 /* DetailsViewController.xib */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +149,8 @@
 			files = (
 				DA92391629D9E0E600573CE8 /* LaunchScreen.storyboard in Resources */,
 				DA92391329D9E0E600573CE8 /* Assets.xcassets in Resources */,
-				DA92391129D9E0E200573CE8 /* Main.storyboard in Resources */,
+				DA92391129D9E0E200573CE8 /* Home.storyboard in Resources */,
+				DA92392029D9E1EF00573CE8 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,21 +161,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA92390E29D9E0E200573CE8 /* ViewController.swift in Sources */,
+				DA92390E29D9E0E200573CE8 /* HomeViewController.swift in Sources */,
 				DA92390A29D9E0E200573CE8 /* AppDelegate.swift in Sources */,
 				DA92390C29D9E0E200573CE8 /* SceneDelegate.swift in Sources */,
+				DA92391F29D9E1EF00573CE8 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DA92390F29D9E0E200573CE8 /* Main.storyboard */ = {
+		DA92390F29D9E0E200573CE8 /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DA92391029D9E0E200573CE8 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		DA92391429D9E0E600573CE8 /* LaunchScreen.storyboard */ = {
@@ -285,14 +309,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M4UA5422US;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LandmarkBookProjectt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,6 +326,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.serhatdemir.LandmarkBookProjectt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,14 +338,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M4UA5422US;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LandmarkBookProjectt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,6 +355,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.serhatdemir.LandmarkBookProjectt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
